@@ -1,0 +1,123 @@
+body {
+	background: url(https://images.unsplash.com/photo-1508313880080-c4bef0730395?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80);
+	background-size: cover;
+	background-position: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+	background-color: rgba(255,230,179,0.7);
+	width: 100%;
+}
+
+h5 {
+	font-weight: 700;
+}
+
+h4 {
+	font-weight: 700;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+button:focus {
+	outline: none;
+}
+
+button {
+	border: none;
+	background: none;
+	outline: none;
+}
+
+.winner {
+	color: green;
+}
+
+.numInput {
+	width: 30%;
+	margin: 10px auto;
+}
+
+.frame {
+	margin-top: 20px;
+	background-color: rgba(255,230,179,0.7);
+	width: 80%;
+}
+
+.picture {
+	height: 200px;
+	width: auto;
+}
+
+.pictureCards {
+	height: 150px;
+	width: auto;
+}
+
+.navButton {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-family: 'Concert one', cursive;
+	color: black;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	outline: none;
+	padding: 0 40px;
+}
+
+.navButton:hover {
+	color: rgba(255,230,179,1);
+	background: black;
+}
+
+.selected {
+	color: rgba(255,230,179,0.7);
+	background: black;
+}
+
+.sectionLabel {
+	font-family: 'Concert one', cursive;
+	font-size: 50px;
+}
+
+#buttons {
+	background-color: rgba(255,230,179,0.7);
+	width: 80%;
+}
+
+#reset {
+	margin-bottom: 10px;
+}
+
+#header	{
+	font-family: 'Lobster', cursive;
+	font-size: 100px;
+	color: rgba(255,230,179,0.7) ;
+	margin-top: 60px;
+}
+
+#brand {
+	font-family: 'Lobster', cursive;
+	font-size: 30px;
+}
+
+#tIcon {
+	height: 80px;
+	width: auto;
+}
+
+#tIconNav {
+	height: 40px;
+	width: auto;
+}
+
+
+

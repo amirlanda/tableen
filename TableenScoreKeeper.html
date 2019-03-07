@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tableen</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Berkshire+Swash|Concert+One|Lobster|Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="scoreKeeper.css">
+	<link rel="icon" href="https://cdn2.iconfinder.com/data/icons/royal-crowns/512/royal-alphabet-crown-letter-english-t-512.png">
+</head>
+<body>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light p-1">
+  <button id="brand" onClick="document.getElementById('header').scrollIntoView(0);">Tableen</button>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <img id="tIconNav" src="https://cdn2.iconfinder.com/data/icons/royal-crowns/512/royal-alphabet-crown-letter-english-t-512.png">
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      	<button id="scoreNavButton" class="navButton">Score Keeper</button>
+		<button id="calNavButton" class="navButton">Calculate Points</button>
+		<button id="valNavButton" class="navButton">Card Values</button>
+		<button id="rulesNavButton" class="navButton">Rules</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container text-center">
+	<h1 id="header">Tableen</h1>
+</div>
+
+<div id="scoreKeeper" class = "container text-center mt-3 py-3 frame">
+	<h1 class="sectionLabel">Score Keeper</h1>
+	<h3><small class="text-muted">Enter your points after each round.</small></h3>
+	<h3><small class="text-muted">First to 31 points wins!</small></h3>
+			<div class="container mt-3">
+			  <div class="row">
+			    <div class="col">
+			    	<img class="picture mb-2 border border-secondary" src="Froike.jpg">
+			    	<h4 class="sectionLabel">Player 1</h4>
+			     	<div class="input-group input-group-sm numInput">
+		 				<input id="p1Input" class="form-control border border-secondary" aria-label="With textarea"></input>
+					 </div>
+			    </div>
+			    <div class="col">
+			    	<h1 class="display-4"> <span id="p1Display" class="display-2">0</span> to <span id="p2Display" class="display-2">0</span> </h1>
+			    </div>
+
+			    <div class="col">
+			      <img class="picture mb-2 border border-secondary" src="Itzik.jpg">
+			      <h4 class="sectionLabel">Player 2</h4>
+			      <div class="input-group input-group-sm numInput">
+		 			<input id="p2Input" class="form-control border border-secondary" aria-label="With textarea"></input>
+		 		  </div>
+			    </div>
+			</div>
+
+			
+		<button id="reset" type="button" class="btn btn-primary">Reset</button>
+	</div>
+
+</div>
+
+<div id="calculatePoints" class = "container text-center my-3 py-3 frame">
+	<h1 class="sectionLabel">How to Calculate Points</h1>
+	<h4 class="mt-3">2 Points Each</h4>
+	<div class="row mt-3">
+		<div class="col">
+			<h3><small class="text-muted">More Cards</small></h3>
+			<img class="pictureCards" src="https://www.wikihow.com/images/thumb/2/2f/Build-a-Tower-of-Cards-Step-1-Version-3.jpg/aid89422-v4-728px-Build-a-Tower-of-Cards-Step-1-Version-3.jpg">
+		</div>
+		<div class="col">
+			<h3><small class="text-muted">Ten of Diamonds</small></h3>
+			<img class="pictureCards" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Playing_card_diamond_10.svg/2000px-Playing_card_diamond_10.svg.png">
+		</div>
+	</div>
+	<h4 class="mt-3">1 Point Each</h4>
+	<div class="row mt-3">
+		<div class="col">
+			<h3><small class="text-muted">Cleared Tables</small></h3>
+			<img class="pictureCards" src="cleared2.jpg">
+		</div>
+		<div class="col">
+			<h3><small class="text-muted">More Clubs</small></h3>
+			<img class="pictureCards" src="https://usercontent2.hubstatic.com/13854693_f520.jpg">
+		</div>
+		<div class="col">
+			<h3><small class="text-muted">Aces</small></h3>
+			<img class="pictureCards" src="https://mlblogstribewithted.files.wordpress.com/2009/08/aces1.gif?w=724&h=710">
+		</div>
+		<div class="col">
+			<h3><small class="text-muted">2 of Clubs</small></h3>
+			<img class="pictureCards" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Playing_card_club_2.svg/2000px-Playing_card_club_2.svg.png">
+		</div>
+	</div>
+</div>
+
+<div id="cardValues" class = "container text-center my-3 py-3 frame">
+	<h1 class="sectionLabel">Card Values</h1>
+	<h4 class="mt-3">During Gameplay</h4>
+	<div class="row mt-3">
+		<div class="col">
+			<h3><small class="text-muted">2s-10s:</small></h3>
+			<h3><small class="text-muted">Face Value</small></h3>
+			<img class="pictureCards" src="http://www.blackjack.org/wp-content/uploads/2015/07/card-values_400x239.jpg">
+		</div>
+		<div class="col">
+			<h3><small class="text-muted">Queens:</small></h3>
+			<h3><small class="text-muted">12</small></h3>
+			<img class="pictureCards" src="Queens.jpg">
+		</div>
+		<div class="col">
+			<h3><small class="text-muted">Kings:</small></h3>
+			<h3><small class="text-muted">13</small></h3>
+			<img class="pictureCards" src="https://comps.canstockphoto.com/four-kings-vector-clipart_csp21359504.jpg">
+		</div>
+	</div>
+	<div class="row mt-3">
+		<div class="col">
+			<h3><small class="text-muted">Aces:</small></h3>
+			<h3><small class="text-muted">14 (in your hand)</small></h3>
+			<h3><small class="text-muted">1 (community card)</small></h3>
+			<img class="pictureCards" src="https://mlblogstribewithted.files.wordpress.com/2009/08/aces1.gif?w=724&h=710">
+		</div>
+		<div class="col">
+			<h3><small class="text-muted">Jacks:</small></h3>
+			<h3><small class="text-muted">Clear the Table (in your hand)</small></h3>
+			<h3><small class="text-muted">11 (community card)</small></h3>
+			<img class="pictureCards" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToYsuv7Tk82KM0K2AQcQ7IKfjr6vT325DjQN3fb05OlrsTJA7Y">
+		</div>
+	</div>
+</div>
+
+<div id="rules" class = "container text-center my-3 py-3 frame">
+	<h1 class="sectionLabel">Rules</h1>
+	<div class="row text-left">
+		<div class="col">
+			<h5>Number of Players: 2</h5>
+			<h5>Starting the Game:</h5>
+			<p>Whichever player is better at cheating deals first.</p>
+			<h5>Starting a Round:</h5>
+			<p>The dealer deals 4 cards to the other player and 4 cards to him/herself.</p>
+			<p>If the other player wants to keep his/her cards, the dealer deals 4 community cards face up.</p>
+			<p>If the other player does not want to keep his/her cards, s/he lays them face up and they become the community cards. The dealer then deals 4 new cards to the other player.</p>
+			<h5>Playing a Hand:</h5>
+			<p>The player who is not dealing goes first.</p>
+			<p>Players take turns playing one of the cards in their hands to collect community cards that are equal to the value of the card played (e.g. 10 can collect a 10, 6 and 4, or 7 and 3).</p>
+		</div>
+		<div class="col">
+			
+			<p>If a player clears the table by collecting all of the available community cards in a turn, s/he marks this by turning a card face down (see Cleared Tables picture).</p>
+			<p>If a player is unable to collect any community cards, or there are no community cards, the player must add one card from their hand to the community cards. </p>
+			<p>NOTE: If a player can only play a Jack and there are no community cards, the Jack becomes a community card with a value of 11. The player does not clear the table. </p>
+			<p>After both players have used all of the cards in their hands, the dealer deals 4 new cards to each player. No new community cars are added.</p>
+			<h5>Ending a Round:</h5>
+			<p>The dealer continues dealing hands until all of the cards in the deck have been played.</p>
+			<p>Any remaining community cards go to the last person to collect a community card.</p>
+		</div>
+		<div class="col">
+			<p>Calculate how many points each player earned in the round.</p>
+			<p>NOTE: If each player has an equal number of cards, they each get one point.</p>
+			<p>Switch the dealer for the next round.</p>
+			<h5>Winning the Game:</h5>
+			<p>The first player to earn 31 points wins. </p>
+			<p>A player does not have to wait until the end of a round to win. S/he can win in the middle of a round, and even the middle of a hand.</p>
+			<p>For example, a player has 30 points at the end of a round. If s/he collect an ace or clear the table in the first hand of the next round, they’ve won!</p>
+			<p>For this reason, rounds toward the end of the game are played point-by-point. </p>
+			<div class="text-center">
+				<img id="tIcon" src="https://cdn2.iconfinder.com/data/icons/royal-crowns/512/royal-alphabet-crown-letter-english-t-512.png"> 
+			</div>	
+		</div>
+	</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript" src="scorekeeper.js"></script>
+</body>
+</html>
